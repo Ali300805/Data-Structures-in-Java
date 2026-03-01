@@ -26,7 +26,7 @@ public class ProductTags {
         System.out.println("Tag '" + tag + "' already exists for product " + productId);
         return false;
     }
-    
+
     public Set<String> getTags(String productId) {
         return productTags.getOrDefault(productId, new LinkedHashSet<>());
     }
@@ -50,7 +50,7 @@ public class ProductTags {
         
         store.addTag("PROD-001", "electronics");
         store.addTag("PROD-001", "smartphone");
-        store.addTag("PROD-001", "electronics"); // Duplicate - ignored
+        store.addTag("PROD-001", "electronics"); 
         store.addTag("PROD-002", "electronics");
         store.addTag("PROD-002", "laptop");
         
